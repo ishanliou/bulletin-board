@@ -54,11 +54,7 @@ class Note extends Component {
         )
     }
     render(){
-        if(this.state.editing) {
-            return this.renderForm()
-        } else {
-            return this.renderDisply()
-        }
+        return this.state.editing ? this.renderForm() : this.renderDisply()
     }
 }
 
